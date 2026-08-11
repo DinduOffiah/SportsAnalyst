@@ -13,6 +13,7 @@ interface SportsState {
   setSport: (sport: Sport) => void;
   setBettingFormat: (format: BettingFormat) => void;
   setLeague: (league: string | "all") => void;
+  setMatches: (matches: Match[]) => void;   // ← Add this
 }
 
 export const useSportsStore = create<SportsState>()(
@@ -25,6 +26,7 @@ export const useSportsStore = create<SportsState>()(
       setSport: (sport) => set({ selectedSport: sport, selectedLeague: "all" }),
       setBettingFormat: (format) => set({ bettingFormat: format }),
       setLeague: (league) => set({ selectedLeague: league }),
+      setMatches: (matches) => set({ matches }),  // ← Add this
     }),
     {
       name: "sportpulse-storage",
