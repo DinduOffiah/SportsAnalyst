@@ -4,6 +4,8 @@ import DashboardHeader from "@/components/ui/DashboardHeader";
 import SportToggle from "@/components/ui/SportToggle";
 import Filters from "@/components/ui/Filters";
 import MatchCard from "@/components/ui/MatchCard";
+import SummaryStats from "@/components/ui/SummaryStats";
+import ProbabilityChart from "@/components/ui/ProbabilityChart";
 import { useSportsStore } from "@/store/useSportsStore";
 
 export default function HomePage() {
@@ -27,6 +29,12 @@ export default function HomePage() {
           <Filters />
         </div>
 
+        {/* Summary Stats */}
+        <SummaryStats />
+
+        {/* Probability Chart */}
+        <ProbabilityChart />
+
         {/* Results count */}
         <div className="mb-6">
           <h2 className="text-lg font-semibold">
@@ -34,7 +42,7 @@ export default function HomePage() {
             {filteredMatches.length !== 1 ? "es" : ""}
           </h2>
           <p className="text-sm text-slate-400 mt-1">
-            Showing fair probabilities (vigorish removed)
+            Showing fair probabilities (bookmaker margin removed)
           </p>
         </div>
 
