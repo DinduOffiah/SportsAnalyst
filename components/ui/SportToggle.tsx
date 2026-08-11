@@ -2,7 +2,6 @@
 
 import { useSportsStore } from "@/store/useSportsStore";
 import { Sport } from "@/lib/types";
-import { cn } from "@/lib/utils"; // if you have shadcn utils, otherwise remove cn and use template
 
 const sports: { value: Sport; label: string; emoji: string }[] = [
   { value: "football", label: "Football", emoji: "⚽" },
