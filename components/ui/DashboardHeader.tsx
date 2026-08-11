@@ -11,14 +11,14 @@ export default function DashboardHeader() {
             <Activity className="w-6 h-6 text-emerald-400" />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight">SportPulse</h1>
+            <h1 className="text-xl font-bold tracking-tight">Sports Analyst</h1>
             <p className="text-xs text-slate-400">Analytics & Predictability Dashboard</p>
           </div>
         </div>
 
         <div className="hidden sm:flex items-center gap-2 text-sm text-slate-400">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Live data mode (Mock)
+          Live data mode
         </div>
       </div>
     </header>
